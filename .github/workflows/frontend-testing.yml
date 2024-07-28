@@ -44,6 +44,13 @@ jobs:
           wait-on: 'http://localhost:3000'
           wait-on-timeout: 60
           browser: chrome
+
+      - name: Upload Cypress videos
+        if: failure() # Only upload if the tests fail
+        uses: actions/upload-artifact@v3
+        with:
+          name: cypress-videos
+          path: cypress/videos/**/*.mp4
         
       
 
