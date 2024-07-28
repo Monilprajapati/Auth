@@ -43,7 +43,6 @@ jobs:
           start: npm run start
           wait-on: 'http://localhost:3000'
           wait-on-timeout: 60
-          group: 'Frontend Tests'
           browser: chrome
         
       
