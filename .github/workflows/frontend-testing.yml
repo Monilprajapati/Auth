@@ -40,7 +40,14 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v6
         with:
-          command: npx cypress run
-          browser: chrome
+          start: npm run start
+          wait-on: 'http://localhost:3000'
+          wait-on-timeout: 60
+          record: true
+          parallel: true
+          group: 'Frontend Tests'
+          browser: chrome,
+        
+      
 
 
