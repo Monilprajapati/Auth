@@ -8,6 +8,7 @@ const App = () => {
   const [user, setUser] = useState(null);
 
   const handleLogin = (user) => {
+    console.log("Login the user")
     setUser(user);
     // setUser("");
   };
