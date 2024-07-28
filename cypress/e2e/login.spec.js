@@ -1,7 +1,7 @@
 // cypress/e2e/login.spec.js
 describe('Login Flow', () => {
     beforeEach(() => {
-      cy.visit('/login'); // Visit the login page before each test
+      cy.visit('http://localhost:3000/login'); // Visit the login page before each test
     });
   
     it('should login successfully and display the username in the navbar', () => {
