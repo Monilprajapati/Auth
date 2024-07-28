@@ -46,7 +46,7 @@ jobs:
           record: true
           parallel: true
           group: 'Frontend Tests'
-          browser: chrome,
+          browser: chrome
         
       
 
