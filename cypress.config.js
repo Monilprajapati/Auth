@@ -5,12 +5,8 @@ module.exports = defineConfig({
     specPattern: 'cypress/e2e/**/*.{js,jsx,ts,tsx}', // Adjust if your specs are in a different location
     baseUrl: 'http://localhost:3000', // Adjust to your app's base URL
     video: false,
-    screenshotOnRunFailure: true,
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
-    env: {
-      apiUrl: 'http://localhost:3000/api'
-    }
   }
 });
