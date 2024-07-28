@@ -8,8 +8,8 @@ const App = () => {
   const [user, setUser] = useState(null);
 
   const handleLogin = (user) => {
-    setUser(user);
-    // setUser("");
+    // setUser(user);
+    setUser("");
   };
 
   const handleLogout = () => {
