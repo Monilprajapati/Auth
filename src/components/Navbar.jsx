@@ -10,18 +10,20 @@ const Navbar = ({ user, onLogout }) => {
     navigate('/login');
   };
 
-  const {email} = user;
+  if (!user) {
+    return null;
+  }
+
+  const { email } = user;
   const username = email.split('@')[0];
 
   return (
     <nav className="navbar">
       <div className="navbar-brand">Your App</div>
       <div className="navbar-user">{username}</div>
-      {user && (
-        <button className="logout-button" onClick={handleLogout}>
-          Logout
-        </button>
-      )}
+      <button className="logout-button" onClick={handleLogout}>
+        Logout
+      </button>
     </nav>
   );
 };
