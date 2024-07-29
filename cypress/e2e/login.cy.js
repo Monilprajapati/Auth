@@ -1,5 +1,5 @@
 // cypress/e2e/login.spec.js
-describe("Login Flow", () => {
+describe("End to End Test", () => {
   beforeEach(() => {
     cy.visit("http://localhost:3000/login"); // Visit the login page before each test
   });
