@@ -8,7 +8,6 @@ const App = () => {
   const [user, setUser] = useState(null);
 
   useEffect(() => {
-    // Load the user from localStorage if it exists
     const savedUser = localStorage.getItem('user');
     if (savedUser) {
       setUser(JSON.parse(savedUser));
@@ -17,13 +16,11 @@ const App = () => {
 
   const handleLogin = (user) => {
     setUser(user);
-    // Save the user to localStorage
     localStorage.setItem('user', JSON.stringify(user));
   };
 
   const handleLogout = () => {
     setUser(null);
-    // Remove the user from localStorage
     localStorage.removeItem('user');
   };
 
