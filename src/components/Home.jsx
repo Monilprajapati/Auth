@@ -17,7 +17,7 @@ const Home = ({ user, onLogout }) => {
       >
         {showDetails ? "Hide" : "Show"} Details
       </button>
-        <UserData showDetails={showDetails}/>
+        <UserData showDetails={showDetails} user={user}/>
     </div>
   );
 };
