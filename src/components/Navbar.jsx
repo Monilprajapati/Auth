@@ -6,6 +6,7 @@ const Navbar = ({ user, onLogout }) => {
   const navigate = useNavigate();
 
   const handleLogout = () => {
+    console.log("User")
     onLogout();
     navigate('/login');
   };
